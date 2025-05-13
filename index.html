@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Sistema de Metas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Metas do Casal</h1>
+    </header>
+
+    <main>
+        <section class="user-section">
+            <h2>Você (Plantão)</h2>
+            <div class="points-display">Seus Pontos: <span id="user1-points">0</span></div>
+
+            <h3>Metas Diárias</h3>
+            <ul id="user1-daily-goals" class="goal-list">
+                </ul>
+
+            <h3>Metas Semanais</h3>
+            <ul id="user1-weekly-goals" class="goal-list">
+                </ul>
+            <button onclick="resetDailyGoals('user1')">Resetar Metas Diárias (Você)</button>
+            <button onclick="resetWeeklyGoals('user1')">Resetar Metas Semanais (Você)</button>
+        </section>
+
+        <section class="user-section">
+            <h2>Ela (8h/dia)</h2>
+            <div class="points-display">Pontos Dela: <span id="user2-points">0</span></div>
+
+            <h3>Metas Diárias</h3>
+            <ul id="user2-daily-goals" class="goal-list">
+                </ul>
+
+            <h3>Metas Semanais</h3>
+            <ul id="user2-weekly-goals" class="goal-list">
+                </ul>
+            <button onclick="resetDailyGoals('user2')">Resetar Metas Diárias (Ela)</button>
+            <button onclick="resetWeeklyGoals('user2')">Resetar Metas Semanais (Ela)</button>
+        </section>
+
+        <section class="rewards-section">
+            <h2>Recompensas</h2>
+            <ul id="rewards-list">
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nosso Cantinho de Metas</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
